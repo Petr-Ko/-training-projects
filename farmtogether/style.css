@@ -1,0 +1,539 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* make sure to set some focus styles for accessibility */
+:focus {
+    outline: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F2F2F2;
+    font-size: 16px;
+    color: #23252E;
+}
+ol, ul, menu, nav {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+/* customization styles */
+@media screen and (max-width:900px) {
+    .logo-farm {
+        display: none;
+    }
+    h2 {
+        align-self: center;
+        /* font-size: 21px; */
+    }
+    picture.header-logo {
+        flex-basis: 10%;
+    }
+     nav.header-menu {
+       flex-basis: 70%;
+   }
+   section.opportunities {
+    width: 95%;
+   }
+   h2.opportunities-title {
+       font-size: 21px;
+       padding: 0;
+       text-align: center;
+   }
+   img.invest-img, img.main-dividend-payments-img, img.selling-your-land-img {
+       display: none;
+   }
+   p.dividend-pink-bg, p.pink-bg {
+       margin-left: 0; 
+   }
+   .invest-item-blck-text, .dividend-payments-items-text, .selling-your-land-text {
+       background-position: center;
+              
+   }
+   .dividend-yellow-bg {
+       width:100%
+   }
+ p.invest-item-blck-text, p.selling-your-land-text {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+   } 
+   section.invest-main {
+       width: 60%;   
+       margin: 0 auto;
+    }
+    ul.invest-items {
+        flex-basis: 100%;
+    }
+    section.management {
+        width: 90%;
+    } 
+     h2.management-title {
+        text-align: center;
+    }
+    section.management-artiles-blck, article.management-item-blck  {
+        flex-direction: column;
+    }
+    section.management-artiles-blck {
+        margin: 0;
+    }
+    img.management-items-blck-img {
+        align-self: center;
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    p.management-items-blck-text {
+        text-align: center;
+    }
+   section.main-dividend-payments {
+       width: 60%;
+       
+   }
+   ul.dividend-payments-items, u.selling-your-land-main, ul.selling-your-land-items {
+       width:100%;
+   }
+    p.dividend-payments-items-text, p.selling-your-land-text {
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+    h2.selling-your-land-title  {
+        text-align: center;
+        margin: 0;
+    }
+    section.selling-your-land-main {
+        width: 60%;
+        margin: 0 auto;
+        
+    }
+    p.salling-pink-bg {
+        margin: 0;  
+    }
+    section.faq {
+        width: 400px;
+        height: 400px;
+    }
+    h2.faq-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px; 
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.196875px;
+        width: 60%;
+    }
+    p.faq-subtitle {
+        width: 80%;
+    }
+    footer.footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    li.footer-menu-blck {
+        text-align: center;
+    }
+    .footer-contact {
+        margin-top: 5%;
+    }
+    .social-img-blck {
+        display: flex;
+        justify-content: center;
+    } 
+    p.pink-bg, p.dividend-pink-bg, p.salling-pink-bg {
+        background-image: url(img/pink-bg-opacity.svg);
+    }
+    p.yellow-bg, p.dividend-yellow-bg, p.salling-yellow-bg {
+        background-image: url(img/yellow-bg-opacity.svg);
+    }
+}
+@media screen and (max-width:670px) {
+    .logo-farm {
+        display: block;
+    }
+        nav.header-menu {
+        display: none;
+    }
+    span.menu-responsive {
+        display: inline-block;
+    }
+    @media screen and (max-width:400px) {
+        .logo-farm {
+            display: none;
+            
+        }
+        h2.opportunities-title, h2.invest-title, h2.management-title, h2.dividend-payments-title {
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 30px
+        }
+        .logo-logo {
+            width: 40px;
+            height: auto;
+        }
+        .opportunities-items, .opportunities-item-blck {
+            flex-direction: column;
+        }
+        .opportunities-item-blck-text {
+            text-align: center;
+        }
+        section.invest-main, section.main-dividend-payments, section.selling-your-land-main {
+            width: 80%;   
+        }
+        .invest-button-text-responsive {
+            display: none;
+        }
+        section.faq {
+            width: 350px;
+            height: 350px;
+        }
+        h2.faq-title {
+            font-size: 21px;
+        }
+    }
+}
+/* end media */
+h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 60px;
+    letter-spacing: 0.225px;
+    color: #23252E;
+}
+button {
+    background: #FFBF47;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+}
+header {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3%;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+    flex-basis: 40%;
+}
+.logo-farm {
+    margin-left: 10px;
+}
+.header-menu {
+    display: flex;   
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis:50%;
+    flex-shrink: 1;
+}
+.header-menu-link {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.13125px;
+    text-transform: uppercase;
+    color: #878797;
+}
+.orange {
+    color: #FFD270;
+}
+.header-button {
+    width: 106px;
+    height: 40px;
+    flex-shrink: 1;
+}
+.menu-responsive {
+    display: none;
+}
+.opportunities {
+    width: 70%;
+    margin:8% auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.opportunities-title {
+    margin-bottom: 1.5em;
+    padding-left:50px;
+}
+.opportunities-item-blck-text, .management-items-blck-text {
+    font-weight: 500;
+    line-height: 25px;
+    color: #23252E;
+}
+.opportunities-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.opportunities-item-blck {
+    display: flex;
+    flex-basis: 45%;
+    align-items: center;
+}
+.opportunities-item-blck-img {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.padding-img {
+    padding: 13px;
+}
+.invest {
+    margin-top: 10%;
+}
+.invest-main {
+    margin-top: 2%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-left:13%;
+}
+.invest-title {
+    text-align: center;
+}
+.invest-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-basis:60%;  
+}
+.invest-item-blck {
+    flex-basis:40%
+}
+.invest-item-blck-text, .dividend-payments-items-text, .selling-your-land-text {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.pink-bg {
+    background-image: url(img/invest-blck1-bg.svg);
+    margin-left: 50px;
+}
+.yellow-bg {
+    background-image: url(img/invest-blck2-bg.svg);
+}
+.invest-item-blck-text {
+    padding: 50px;  
+}
+.management {
+    margin:8% auto 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+}
+.management-title {
+    margin-bottom: 1.5em;
+    align-self: flex-end;  
+}
+.management-artiles-blck {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.management-artiles-blck:last-child {
+    margin-bottom: 0;
+}
+.management-item-blck {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 45%;
+    justify-content: space-between;
+}
+.management-items-blck-img {
+    padding-right: 10px;
+    align-self: start;
+}
+.dividend-payments {
+    margin-top: 8%;
+}
+.dividend-payments-title {
+    text-align: center;
+    margin-bottom: 2em;
+}
+.main-dividend-payments {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dividend-payments-item-blck:first-child {
+    margin-bottom: 30px;
+}
+.dividend-payments-items {
+    width: 40%;
+    
+}
+.dividend-payments-items-text {
+    padding:40px;
+}
+.dividend-pink-bg {
+   background-image: url(img/diivideng-blck-1-bg.svg); 
+   margin-left: 80px;
+}
+.dividend-yellow-bg {
+    background-image: url(img/diivideng-blck-2-bg.svg); 
+}
+.selling-your-land {
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.selling-your-land-title {
+    margin-bottom: 1.5em;
+    margin-left: 10%;
+}
+.selling-your-land-main {
+    width: 70%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.selling-your-land-items {
+    width: 50%;
+}
+.selling-your-land-blck:first-child {
+    margin-bottom: 30px;
+}
+.salling-pink-bg {
+    background-image: url(img/salling-blck-1-bg.svg);
+    margin-left: 50px;
+}
+.salling-yellow-bg {
+    background-image: url(img/salling-blck-2-bg.svg);
+}
+.selling-your-land-text {
+    padding:50px;
+}
+button.invest-button {
+    width: 280px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+button a {
+    color:white
+}
+.faq {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    margin: 4% auto 4%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/faq-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.faq-title {
+    width: 80%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.39375px;
+    color: #FFFFFF;
+    margin-bottom: 5%;
+}
+.faq-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 10%;
+}
+button.button-faq {
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px #FB9B8F;
+    width: 210px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.7px;
+    color: #FB9B8F;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+footer {
+    width:80%;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+    color: #9AA1B8;
+}
+.footer-menu-blck a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+    color: #9AA1B8;
+}
+a.link-color-orange {
+    color:#FB9B8F
+}
+.footer-social-img {
+    margin-right: 10px;
+}
+.footer-social-img:last-child {
+    margin-right: 0;
+}

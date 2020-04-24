@@ -1,0 +1,181 @@
+@media only screen and (min-width : 320px) and (max-width: 1149px)  {
+    div.main-right-go-to-price {
+        display: none;
+    }
+} 
+@media only screen and (min-width : 320px) and (max-width: 800px)  {
+    menu.main-menu, img.main-left {
+        display: none;
+    }
+    header.header {
+        justify-content: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    div.whatsapp {
+        margin:20px auto;
+    }
+    p.title-text {
+        width: 100%;
+    }
+    form.main-form-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+} 
+
+@font-face {
+    font-family: 'Proxima Nova'; 
+    src: url(fonts/Proxima_nova.ttf);
+    font-family: 'Proxima Nova bold';
+    src: url(fonts/Proxima_nova_bold.ttf);
+}
+html, body {
+    font-family: 'Proxima Nova', sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+.main {
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 47px;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    margin:0 auto 47px;
+}
+.logo {
+    max-width: 261px;
+}
+.main-menu {
+    list-style-type: none;
+    display: flex;
+    padding-inline-start: 0;
+}
+.main-menu-link {
+    text-decoration: none;
+    color: #000000;
+    height: 14px;
+    font-family: 'Proxima Nova bold';
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.main-menu-link:hover {
+    color:white;
+    border-bottom: 3px solid white;
+}
+.main-menu-blck {
+    margin-right: 20px;
+}
+.main-menu-blck:last-child {
+    margin-right: 0;
+}
+.phone a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Proxima Nova bold";
+    font-size: 24px;
+    font-weight: 400;
+}
+.phones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.whatsapp {
+    display: flex;
+    width: 115%;
+    justify-content:row;
+    align-items: center;
+}
+.whatsapp a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Proxima Nova bold';
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.whatsapp img {
+    max-width:12%;
+    margin-left: 5px;
+}
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto; 
+}
+.main-title {
+    font-family: 'Proxima Nova bold';
+    font-size: 48px;
+    font-weight: 700;
+}
+.title-text {
+    font-family: 'Proxima Nova bold'; 
+    font-size: 24px;
+    /* font-weight: 600; */
+    width: 70%;
+}
+.main-right-go-to-price {
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+.main-right-go-to-price-text {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Proxima Nova bold';
+    align-self: flex-end;  
+}
+.main-right-go-to-price-img {
+    align-self: flex-end;
+    margin-right: 15%; 
+}
+.main-form-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+}
+.main-form {
+    background-color: #ffffff;
+    opacity: 0.7; 
+    text-transform: uppercase;
+    padding:20px;
+    outline: none;
+    border:none;
+    margin-bottom: 30px;
+    width: 240px;
+}
+.consult-black {
+    width: 275px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Proxima Nova bold' ;
+}
+.consult-black:hover {
+    background-color: #ff4513;
+    color: black;
+}
+.main-form::-webkit-input-placeholder {
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+}
+.main-left {
+    align-self: flex-end;
+}
+
